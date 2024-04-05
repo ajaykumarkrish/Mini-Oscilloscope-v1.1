@@ -723,7 +723,7 @@ void auxFunctions() {                       // voltage meter function
   }
 }
 
-void uuPinOutputLow(unsigned int d, unsigned int a) { // 指定ピンを出力、LOWに設定
+void uuPinOutputLow(unsigned int d, unsigned int a) { 
   // PORTx =0, DDRx=1
   unsigned int x;
   x = d & 0x00FF; PORTD &= ~x; DDRD |= x;
